@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {background-color: #baaeae; font-size: 1rem;}
+html {scroll-behavior: smooth;}
+a {color: #B90026; text-decoration: none; transition-duration: 1s;}
+a:hover {color: #2b2b2b; transition-duration: 1s;}
+
+/* TEXTOS */
+h1 {font-size: 4rem; font-weight: 900; line-height: 3.5rem; color: #B90026;}
+h1 span {line-height: .5rem;}
+h1 small {font-size: 2rem; font-weight: 600;}
+h2 {font-size: 3rem; font-weight: 900; line-height: 3.5rem; color: #B90026;}
+h2.principio {font-size: 2.5rem; line-height: 5rem; margin-bottom: .5rem;}
+h2.ref {font-size: 3rem; line-height: 3.5rem; margin-top: 2rem; margin-bottom: .5rem;}
+h3 {font-size: 1.5rem; font-weight: 900; line-height: 2rem; color: #B90026;}
+cite {font-size: 1.3rem; font-weight: 700; color: #2b2b2b;font-style: normal}
+p {
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin: 1em 0;
+  text-transform: none;
+}
+.StrongS {font-weight: 400; padding: 0 .2rem; color: #e8e4e4; background-color: #2b2b2b;}
+/* FIM TEXTOS */
+
+.center {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+}
+
+.header {width: 100%;}
+
+.top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #442021;
+}
+
+.img {margin: -1rem 2rem 0 0;}
+
+/* MAIN */
+.main {padding-top: 5%; width: 100%;}
+
+/* CONTEUDO */
+.conteudoSobre {width: 40%;}
+.conteudoSobreTexto {width: 100%; padding-bottom: 5%;}
+.conteudo {width: 100%; padding-top: 2%;}
+.conteudo p {font-size: 1.2rem; color: #2b2b2b;}
+.ref-lista {color: #2b2b2b; font-size: 1.1rem; margin: .2rem 0; padding-bottom: 5%;}
+.ref-lista a {color: #2b2b2b; text-decoration: underline; font-style: normal; letter-spacing: 0; line-height: 2;}
+.ref-lista a:hover {color: white; background-color: #2b2b2b;}
+
+/* SOBRE */
+.imgSobre {width: 250px; padding-top: 50px;}
+.sobre h2 {margin-bottom: 20px;}
+.sobre p {color: #2b2b2b; font-size: 1.1rem;}
+
+/* MENU */
+.menu {
+  padding: 2%;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #2b2b2b;
+}
+
+.menu h2 {color: white; padding-bottom: 3%;}
+.menu a {color: white; text-decoration: underline;}
+.menu p {font-size: 1.1rem;}
+.menu a:hover {color: #442021; background-color: #fdced0;}
+.menu nav li {margin: .4rem 0;}
+
+/* MINI AULA */
+.miniAula {
+  padding: 2%;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #B90026;
+}
+
+.miniAula h2 {color: white;}
+.miniAula .StrongS {color: #B90026;background-color: #ffe5e5;}
+
+.miniAula button {
+  cursor: pointer;
+  background-color: #B90026;
+  color: white;
+  font-size: .9rem;
+  border: 1px solid white;
+  padding: 0 3%;
+  border-radius: 30px;
+  transition-duration: 1s;
+}
+
+.miniAula button:hover {
+  background-color: white;
+  color: #2e3138;
+  transition-duration: 1s;
+}
+
+.button-icon {
+  display: flex;
+}
+
+/* FOOTER */
+.pFooter {font-size: 1.1rem; text-align: center; width: 100%; color: #2b2b2b; padding: 3%;}
+.pFooter i {color: #B90026;}
+
+/* PULSE CORAÇÃO */
+
+.pulse {
+  animation: pulse 0.5s infinite;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  .title {padding-bottom: 10%;}
+  .img, .menu img, .conteudoSobre {display: none;}
+  .sobre {padding-top: 5%;}
+
+  h2.principio {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: .8rem;
+  }
+}
